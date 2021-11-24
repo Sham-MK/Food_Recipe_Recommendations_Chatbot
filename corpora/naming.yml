@@ -1,0 +1,29 @@
+categories:
+- Naming
+conversations:
+- - My name is blank
+  - set
+- - change my name to blank
+  - set
+- - change my name to blank
+  - set
+- - call me blank
+  - set
+- - call me 
+  - set
+- - call me blank
+  - set
+- - blank is my name
+  - set
+- - the name is blank
+  - set
+- - what is my name
+  - get
+- - What is my name?
+  - get
+- - what is my name?
+  - get
+- - tell me my name
+  - get
+- - Do you know my name?
+  - get.
