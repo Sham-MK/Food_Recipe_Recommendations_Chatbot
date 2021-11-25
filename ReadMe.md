@@ -1,10 +1,10 @@
 # Recipe Recommendation Chatbot
 A dynamic chatbot that engages in shallow conversations and recommends recipes according to user input.
 
-##How To Run
+## How To Run
 Simply execute the chatbot.py file (found it the root directory of the project) on your command line interface or desired IDE.
 
-###Remarks
+### Remarks
 * The model and vectorizer pickle file were written with python 3.9, if you run a different version of python, it is advisable to run the model training file again to avoid warnings. The model training script can be found at root/features/model_training.py.
 * All the feature functions are found in th features directory.
 * The corpora datasets can be found in the corpora directory.

@@ -34,12 +34,14 @@ while flag:
             if text != None:
                 print('Gordon: ' + text)
                 print('Gordon: Was that helpful?')
-                a = input(name+ ': ')
-                if 'yes' in a.lower(): print('I am happy to help')
-                elif 'no' in a.lower():
+                answer = input(name + ': ')
+                while 'no' in answer.lower():
                     print('I am sorry, please hold on a minute while I check my database for another recipe for your craving. :)')
                     text = recipe_random_response(simlarities, names, recipes)
                     print('Gordon: ' + text)
+                    print('Gordon: Was that helpful?')
+                    answer = input(name + ': ')
+                if 'yes' in answer.lower(): print('Gordon: I am happy to help')
                 else:
                     print('Gordon: I am sorry I don\'t understand what you mean by that')
             else: print('Gordon: I am sorry I don\'t seem to have this recipe in my database, could you please re-phrase it for me, ' \

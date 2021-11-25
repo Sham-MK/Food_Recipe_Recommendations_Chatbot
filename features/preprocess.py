@@ -8,7 +8,7 @@ def pre_process(category):
     data_list = []
     m = []
     r = []
-    filepath = 'D:\\Users\\shamm\\PycharmProjects\\CW1' + '/corpora' + os.sep + category + '.yml'
+    filepath = os.getcwd() + '/corpora' + os.sep + category + '.yml'
     if category.lower() == 'recipes':  # parsing of recipes dataset is different
         with open(filepath, encoding='utf8', errors='ignore', mode='r') as file:
             for i in yaml.load(file, Loader=yaml.FullLoader):
